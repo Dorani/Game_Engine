@@ -1,12 +1,12 @@
 #hero_div {
   color: rgb(200, 30, 30);
+}
+
+.person{
   border: 1px solid rgb(200,200,200);
   width: 42px;
   height: 64px;
   border-radius: 4px;
   text-align: center;
-}
-
-.person{
-  
+  line-height: 64px;
 }
