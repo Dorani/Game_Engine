@@ -1,7 +1,12 @@
 #hero_div {
   color: rgb(200, 30, 30);
+  top: 120px;
+  left: 120px;
+  background-color: rgb(30,160,20,.3);
 }
-
+.person:before{
+  
+}
 .person{
   border: 1px solid rgb(200,200,200);
   width: 42px;
