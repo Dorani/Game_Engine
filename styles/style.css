@@ -10,4 +10,5 @@
   text-align: center;
   line-height: 64px;
   display: inline-block;
+  position: absolute;
 }
