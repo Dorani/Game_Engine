@@ -6,7 +6,7 @@
 }
 
 .person::before{
- border: 1px solid rgba(0,0,0,1);
+ border: 2px solid rgba(0,0,0,1);
  content: "";
  display: block;
  height: 10px;
@@ -17,10 +17,11 @@
  width: 10px;
  border-top-left-radius: 7px;
  border-top-right-radius: 7px;
+ background-color: rgba(100,100,100,1);
 }
 
 .person::after{
- border: 1px solid rgba(0,0,0,1);
+ border: 2px solid rgba(0,0,0,1);
  content: "";
  display: block;
  height: 10px;
@@ -31,6 +32,8 @@
  width: 10px;
  border-top-left-radius: 7px;
  border-top-right-radius: 7px;
+ background-color: rgba(100,100,100,1);
+
 }
 
 
