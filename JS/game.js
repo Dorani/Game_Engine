@@ -11,7 +11,9 @@ $(document).ready(function(){//selecting the document, then running a function c
   world.people = [];//collection to iterate through
   world.people.push({el: $("#extra1"), top: 0, left:0, directionX: 1, directionY: 1 });//0 element of the array, random direction
   //storing value for easy retrieval, to know where everything is, to see if people are hitting each other
-  world.people.push({el: $("#extra2"), top: 0, left:0, directionX: 1, directionY: 1 });// 1 element of array
+  world.people.push({el: $("#extra2"), top: 40, left:200, directionX: 1, directionY: 1 });// 1 element of array
+  world.people.push({el: $("#extra3"), top: 100, left:300, directionX: 1, directionY: 1 })
+  world.people.push({el: $("#extra4"), top: 100, left:500, directionX: 1, directionY: 1 })
 });
 
 function movePeople(){//creating a function called movePeople to randomize movements
