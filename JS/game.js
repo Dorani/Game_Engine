@@ -25,14 +25,23 @@ function movePeople(){//creating a function called movePeople to randomize movem
     //randomly change directionXorY FOR the person
     //5 percent chance
     //if you are going up now you are going down
-    if (Math.random()>.95){
-      person.directionY = -person.directionY;
+    if (Math.random() > .95){
+      person.directionY = - person.directionY;
     }
 
-    if (Math.random()>.95){
-      person.directionX = -person.directionX;
+    if (Math.random() > .95){
+      person.directionX = - person.directionX;
     }
 
+    if (person.left < 5) { person.left = 5; }
+    if (person.left > 840) { person.left = 840; }
+    if (person.top < 5) { person.top = 5; }
+    if (person.top > 640) { person.top = 640; }
+
+    person.el.css("top", person.top+"px");
+    person.el.css("left", person.left+"px");
 
   }
+  setTimeout(movePeople, 1000);
 }
+movePeople();
