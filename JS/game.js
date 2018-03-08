@@ -22,5 +22,17 @@ function movePeople(){//creating a function called movePeople to randomize movem
     //math . random gives a number between 0 and 9 and that we are multiplying by directoion y and x
     person.left = person.left + (parseInt(Math.random() * 10) * person.directionX);//math . random gives a number between 0 and 9 and that we are multiplying by directoion y and x
 
+    //randomly change directionXorY FOR the person
+    //5 percent chance
+    //if you are going up now you are going down
+    if (Math.random()>.95){
+      person.directionY = -person.directionY;
+    }
+
+    if (Math.random()>.95){
+      person.directionX = -person.directionX;
+    }
+
+
   }
 }
